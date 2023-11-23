@@ -53,8 +53,8 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node) {
 // - Return the pointer.
 
 bool compare(RouteModel::Node * p1, RouteModel::Node * p2) {
-  int sumP1 = p1->h_value + p1->g_value;
-  int sumP2 = p2->h_value + p2->g_value;
+  float sumP1 = p1->h_value + p1->g_value;
+  float sumP2 = p2->h_value + p2->g_value;
   return sumP1 > sumP2;
 }
 
